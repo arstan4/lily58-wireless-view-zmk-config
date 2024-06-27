@@ -21,11 +21,11 @@
 
             label = "Base";
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5        &kp NUMBER_6                         &kp N7  &kp N8             &kp N9     &kp N0   &kp EQUAL  &kp BACKSPACE
-&kp TAB       &kp Q         &kp W         &kp E         &kp R         &kp T                                &kp Y   &kp U              &kp I      &kp O    &kp P      &kp BSLH
-&kp LCTRL     &kp A         &kp S         &kp D         &kp F         &kp G                                &kp H   &kp J              &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LSHFT     &kp Z         &kp X         &kp C         &kp V         &kp B         &kp LBKT     &kp RBKT  &kp N   &kp M              &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
-                                          &kp LALT      &kp LEFT_GUI  &to 1         &kp SPACE    &kp RET   &to 2   &kp RIGHT_CONTROL  &kp F12
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5        &kp NUMBER_6                            &kp N7  &kp N8             &kp N9         &kp N0   &kp EQUAL  &kp BACKSPACE
+&kp TAB       &kp Q         &kp W         &kp E         &kp R         &kp T                                   &kp Y   &kp U              &kp I          &kp O    &kp P      &kp BSLH
+&kp LCTRL     &kp A         &kp S         &kp D         &kp F         &kp G                                   &kp H   &kp J              &kp K          &kp L    &kp SEMI   &kp SQT
+&kp LSHFT     &kp Z         &kp X         &kp C         &kp V         &kp B         &kp ESCAPE    &kp DELETE  &kp N   &kp M              &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
+                                          &kp LALT      &kp LEFT_GUI  &to 1         &kp SPACE     &kp RET     &to 2   &kp RIGHT_CONTROL  &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -41,11 +41,11 @@
 
             label = "Lower";
             bindings = <
-&kp F1  &kp F2          &kp F3          &kp F4      &kp F5    &kp F6                                   &kp F7      &kp F8    &kp F9          &kp F10         &kp F11    &trans
-&trans  &trans          &trans          &kp INSERT  &kp HOME  &kp PAGE_UP                              &kp INS     &kp HOME  &kp PAGE_UP     &kp F12         &kp MINUS  &kp EQUAL
-&trans  &trans          &kp UP_ARROW    &kp DELETE  &kp END   &kp PAGE_DOWN                            &kp DELETE  &kp END   &kp PAGE_DOWN   &kp UP_ARROW    &trans     &kp RIGHT_CONTROL
-&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT   &trans    &kp ENTER      &kp ESCAPE    &kp DELETE  &kp SPACE   &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp LEFT_SHIFT
-                                        &trans      &trans    &to 0          &trans        &trans      &to 2       &trans    &trans
+&kp F1  &kp F2          &kp F3          &kp F4      &kp F5    &kp F6                                                &kp F7     &kp F8    &kp F9          &kp F10         &kp F11    &trans
+&trans  &trans          &trans          &kp INSERT  &kp HOME  &kp PAGE_UP                                           &kp INS    &kp HOME  &kp PAGE_UP     &kp F12         &kp MINUS  &kp EQUAL
+&trans  &trans          &kp UP_ARROW    &trans      &kp END   &kp PAGE_DOWN                                         &trans     &kp END   &kp PAGE_DOWN   &kp UP_ARROW    &trans     &kp RIGHT_CONTROL
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT   &trans    &kp ENTER      &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp SPACE  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp LEFT_SHIFT
+                                        &trans      &trans    &to 0          &trans              &trans             &to 2      &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -61,11 +61,11 @@
 
             label = "Raise";
             bindings = <
-&kp TILDE        &kp KP_NUMLOCK   &kp SLASH        &kp MINUS        &trans      &kp BACKSPACE                            &kp TILDE  &kp KP_NUMLOCK   &kp SLASH        &kp MINUS        &kp ASTERISK  &trans
-&trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS    &kp DEL                                  &trans     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS      &trans
-&kp PIPE         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans      &trans                                   &kp PIPE   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans        &trans
-&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans      &kp ENTER      &kp ESCAPE    &kp DELETE  &kp SPACE  &kp KP_N1        &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans        &trans
-                                                   &kp KP_NUMBER_0  &kp PERIOD  &to 0          &trans        &trans      &to 1      &kp KP_NUMBER_0  &kp PERIOD
+&kp GRAVE        &kp KP_NUMLOCK   &kp SLASH        &kp MINUS        &kp ASTERISK  &kp BACKSPACE                                         &kp GRAVE        &kp KP_NUMLOCK   &kp SLASH        &kp MINUS        &kp ASTERISK  &trans
+&trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS      &kp DEL                                               &kp TAB          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS      &kp DELETE
+&trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PIPE      &trans                                                &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PIPE      &trans
+&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp ENTER      &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp KP_NUMBER_0  &kp KP_N1        &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp ENTER
+                                                   &kp LEFT_SHIFT   &kp PERIOD    &to 0          &trans              &trans             &to 1            &kp KP_NUMBER_0  &kp PERIOD
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
