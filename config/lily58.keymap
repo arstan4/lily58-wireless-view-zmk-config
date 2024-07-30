@@ -59,7 +59,7 @@
             // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
             //                     |      |      |      |        |  |       |      |       |       |
 
-            label = "Raise";
+            label = "Num";
             bindings = <
 &kp GRAVE  &kp BACKSPACE    &kp LEFT_BRACKET  &kp SLASH        &kp ASTERISK     &kp MINUS                    &kp GRAVE        &kp RIGHT_BRACKET  &kp SLASH        &kp ASTERISK     &kp MINUS  &trans
 &trans     &kp DELETE       &kp KP_NUMBER_7   &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                     &kp TAB          &kp KP_NUMBER_7    &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS   &kp DELETE
