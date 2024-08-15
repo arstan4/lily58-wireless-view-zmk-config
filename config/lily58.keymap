@@ -15,36 +15,48 @@
             bindings = <&tog 2>;
             key-positions = <50 42>;
             layers = <0>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
         };
 
         arrows0 {
             bindings = <&tog 1>;
             key-positions = <43 57>;
             layers = <0>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
         };
 
         Num1 {
             bindings = <&tog 2>;
             key-positions = <50 42>;
             layers = <1>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
         };
 
         qwerty1 {
             bindings = <&tog 0>;
             key-positions = <43 57>;
             layers = <1>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
         };
 
         qwerty2 {
             bindings = <&tog 0>;
             key-positions = <43 57>;
             layers = <2>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
         };
 
         arrows1 {
             bindings = <&tog 1>;
             key-positions = <50 42>;
             layers = <2>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
         };
     };
 
