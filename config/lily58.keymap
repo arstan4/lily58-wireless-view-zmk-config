@@ -8,57 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        Num0 {
-            bindings = <&tog 2>;
-            key-positions = <50 42>;
-            layers = <0>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <0>;
-        };
-
-        arrows0 {
-            bindings = <&tog 1>;
-            key-positions = <43 57>;
-            layers = <0>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <0>;
-        };
-
-        Num1 {
-            bindings = <&tog 2>;
-            key-positions = <50 42>;
-            layers = <1>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <0>;
-        };
-
-        qwerty1 {
-            bindings = <&tog 0>;
-            key-positions = <43 57>;
-            layers = <1>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <0>;
-        };
-
-        qwerty2 {
-            bindings = <&tog 0>;
-            key-positions = <43 57>;
-            layers = <2>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <0>;
-        };
-
-        arrows1 {
-            bindings = <&tog 1>;
-            key-positions = <50 42>;
-            layers = <2>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <0>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
