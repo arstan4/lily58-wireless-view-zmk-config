@@ -11,10 +11,40 @@
     combos {
         compatible = "zmk,combos";
 
-        Num {
+        Num0 {
             bindings = <&tog 2>;
             key-positions = <50 42>;
             layers = <0>;
+        };
+
+        arrows0 {
+            bindings = <&tog 1>;
+            key-positions = <43 57>;
+            layers = <0>;
+        };
+
+        Num1 {
+            bindings = <&tog 2>;
+            key-positions = <50 42>;
+            layers = <1>;
+        };
+
+        qwerty1 {
+            bindings = <&tog 0>;
+            key-positions = <43 57>;
+            layers = <1>;
+        };
+
+        qwerty2 {
+            bindings = <&tog 0>;
+            key-positions = <43 57>;
+            layers = <2>;
+        };
+
+        arrows1 {
+            bindings = <&tog 1>;
+            key-positions = <50 42>;
+            layers = <2>;
         };
     };
 
