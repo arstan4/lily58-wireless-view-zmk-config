@@ -16,7 +16,7 @@
             key-positions = <50 42>;
             layers = <0>;
             timeout-ms = <50>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <0>;
         };
 
         arrows0 {
@@ -24,7 +24,7 @@
             key-positions = <43 57>;
             layers = <0>;
             timeout-ms = <50>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <0>;
         };
 
         Num1 {
@@ -32,7 +32,7 @@
             key-positions = <50 42>;
             layers = <1>;
             timeout-ms = <50>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <0>;
         };
 
         qwerty1 {
@@ -40,7 +40,7 @@
             key-positions = <43 57>;
             layers = <1>;
             timeout-ms = <50>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <0>;
         };
 
         qwerty2 {
@@ -48,7 +48,7 @@
             key-positions = <43 57>;
             layers = <2>;
             timeout-ms = <50>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <0>;
         };
 
         arrows1 {
@@ -56,7 +56,7 @@
             key-positions = <50 42>;
             layers = <2>;
             timeout-ms = <50>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <0>;
         };
     };
 
