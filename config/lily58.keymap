@@ -8,7 +8,21 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        Escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+            timeout-ms = <50>;
+        };
+
+        Delete {
+            bindings = <&kp DELETE>;
+            key-positions = <11 10>;
+            timeout-ms = <50>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
