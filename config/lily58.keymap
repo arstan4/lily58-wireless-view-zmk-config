@@ -11,15 +11,39 @@
     combos {
         compatible = "zmk,combos";
 
-        Escape {
+        combo_escape_right {
             bindings = <&kp ESCAPE>;
+            key-positions = <30 31>;
+            timeout-ms = <50>;
+        };
+
+        combo_backspace_right {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <11 10>;
+            timeout-ms = <50>;
+        };
+
+        combo_backspace_left {
+            bindings = <&kp BACKSPACE>;
             key-positions = <0 1>;
             timeout-ms = <50>;
         };
 
-        Delete {
-            bindings = <&kp DELETE>;
-            key-positions = <11 10>;
+        combo_escape_left {
+            bindings = <&kp ESCAPE>;
+            key-positions = <28 29>;
+            timeout-ms = <50>;
+        };
+
+        combo_delete_right {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <22 23>;
+            timeout-ms = <50>;
+        };
+
+        combo_delete_left {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <12 13>;
             timeout-ms = <50>;
         };
     };
@@ -37,11 +61,11 @@
 
             label = "qwerty";
             bindings = <
-&kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5        &kp NUMBER_6                        &kp N7      &kp N8             &kp N9     &kp N0   &kp EQUAL  &kp BACKSPACE
-&kp TAB           &kp Q         &kp W         &kp E         &kp R         &kp T                               &kp Y       &kp U              &kp I      &kp O    &kp P      &kp BSLH
-&kp LEFT_CONTROL  &kp A         &kp S         &kp D         &kp F         &kp G                               &kp H       &kp J              &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LEFT_SHIFT    &kp Z         &kp X         &kp C         &kp V         &kp B         &to 1        &to 2    &kp N       &kp M              &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
-                                              &kp LALT      &kp LEFT_GUI  &kp ESCAPE    &kp SPACE    &kp RET  &kp DELETE  &kp RIGHT_CONTROL  &kp MINUS
+&kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5        &kp NUMBER_6                        &kp N7  &kp N8             &kp N9     &kp N0   &kp EQUAL  &kp BACKSPACE
+&kp TAB           &kp Q         &kp W         &kp E         &kp R         &kp T                               &kp Y   &kp U              &kp I      &kp O    &kp P      &kp BSLH
+&kp LEFT_CONTROL  &kp A         &kp S         &kp D         &kp F         &kp G                               &kp H   &kp J              &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LEFT_SHIFT    &kp Z         &kp X         &kp C         &kp V         &kp B         &to 1        &to 2    &kp N   &kp M              &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
+                                              &kp LALT      &kp LEFT_GUI  &to 2         &kp SPACE    &kp RET  &to 0   &kp RIGHT_CONTROL  &kp MINUS
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
