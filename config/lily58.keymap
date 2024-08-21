@@ -76,11 +76,11 @@
 
             label = "qwerty";
             bindings = <
-&kp NUMBER_1      &hold_tap F2 NUMBER_2  &kp NUMBER_3       &kp NUMBER_4       &kp N5             &kp NUMBER_6                        &kp N7  &kp N8             &kp N9     &kp N0   &kp EQUAL  &hold_tap LC(BACKSPACE) BACKSPACE
-&kp TAB           &kp Q                  &kp W              &kp E              &kp R              &kp T                               &kp Y   &kp U              &kp I      &kp O    &kp P      &kp BSLH
-&kp LEFT_CONTROL  &kp A                  &kp S              &kp D              &kp F              &kp G                               &kp H   &kp J              &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LEFT_SHIFT    &kp Z                  &hold_tap LC(X) X  &hold_tap LC(C) C  &hold_tap LC(V) V  &kp B         &to 1        &to 2    &kp N   &kp M              &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
-                                                            &kp LALT           &kp LEFT_GUI       &to 2         &kp SPACE    &kp RET  &to 1   &kp RIGHT_CONTROL  &kp MINUS
+&hold_tap F1 NUMBER_1  &hold_tap F2 NUMBER_2  &hold_tap F3 NUMBER_3  &hold_tap F4 NUMBER_4  &hold_tap F5 N5    &hold_tap F6 NUMBER_6                        &hold_tap F7 N7  &hold_tap F8 N8    &hold_tap F9 N9  &hold_tap F10 N0  &hold_tap MINUS EQUAL  &hold_tap LC(BACKSPACE) BACKSPACE
+&hold_tap LS(TAB) TAB  &kp Q                  &kp W                  &kp E                  &kp R              &kp T                                        &kp Y            &kp U              &kp I            &kp O             &hold_tap F12 P        &kp BSLH
+&kp LEFT_CONTROL       &kp A                  &kp S                  &kp D                  &kp F              &kp G                                        &kp H            &kp J              &kp K            &kp L             &kp SEMI               &kp SQT
+&kp LEFT_SHIFT         &kp Z                  &hold_tap LC(X) X      &hold_tap LC(C) C      &hold_tap LC(V) V  &kp B                  &to 1        &to 2    &kp N            &kp M              &kp COMMA        &kp DOT           &kp FSLH               &kp RSHFT
+                                                                     &kp LALT               &kp LEFT_GUI       &to 2                  &kp SPACE    &kp RET  &to 1            &kp RIGHT_CONTROL  &kp MINUS
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
