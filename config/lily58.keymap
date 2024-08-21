@@ -48,6 +48,21 @@
         };
     };
 
+    behaviors {
+        hold_tap: hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <53 54 42 43 52 51 50 55 56 57 24 12 36 49>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -61,11 +76,11 @@
 
             label = "qwerty";
             bindings = <
-&kp NUMBER_1      &mt F2 NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5        &kp NUMBER_6                        &kp N7  &kp N8             &kp N9     &kp N0   &kp EQUAL  &mt LC(BACKSPACE) BACKSPACE
-&kp TAB           &kp Q            &kp W         &kp E         &kp R         &kp T                               &kp Y   &kp U              &kp I      &kp O    &kp P      &kp BSLH
-&kp LEFT_CONTROL  &kp A            &kp S         &kp D         &kp F         &kp G                               &kp H   &kp J              &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LEFT_SHIFT    &kp Z            &mt LC(X) X   &mt LC(C) C   &mt LC(V) V   &kp B         &to 1        &to 2    &kp N   &kp M              &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
-                                                 &kp LALT      &kp LEFT_GUI  &to 2         &kp SPACE    &kp RET  &to 1   &kp RIGHT_CONTROL  &kp MINUS
+&kp NUMBER_1      &hold_tap F2 NUMBER_2  &kp NUMBER_3       &kp NUMBER_4       &kp N5             &kp NUMBER_6                        &kp N7  &kp N8             &kp N9     &kp N0   &kp EQUAL  &hold_tap LC(BACKSPACE) BACKSPACE
+&kp TAB           &kp Q                  &kp W              &kp E              &kp R              &kp T                               &kp Y   &kp U              &kp I      &kp O    &kp P      &kp BSLH
+&kp LEFT_CONTROL  &kp A                  &kp S              &kp D              &kp F              &kp G                               &kp H   &kp J              &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LEFT_SHIFT    &kp Z                  &hold_tap LC(X) X  &hold_tap LC(C) C  &hold_tap LC(V) V  &kp B         &to 1        &to 2    &kp N   &kp M              &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
+                                                            &kp LALT           &kp LEFT_GUI       &to 2         &kp SPACE    &kp RET  &to 1   &kp RIGHT_CONTROL  &kp MINUS
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
