@@ -145,8 +145,8 @@
             label = "Arrows";
             bindings = <
 &trans  &trans                   &trans                           &kp INS                    &kp HOME  &kp PAGE_UP                                        &kp INS          &kp HOME  &kp PAGE_UP              &trans                           &trans                     &trans
-&trans  &trans                   &hold_tap UP_ARROW LC(UP_ARROW)  &kp PRINTSCREEN            &kp END   &kp PAGE_DOWN                                      &kp PRINTSCREEN  &kp END   &kp PAGE_DOWN            &hold_tap UP_ARROW LC(UP_ARROW)  &trans                     &trans
-&trans  &hold_tap LEFT LC(LEFT)  &hold_tap DOWN LC(DOWN)          &hold_tap RIGHT LC(RIGHT)  &trans    &trans                                             &trans           &trans    &hold_tap LEFT LC(LEFT)  &hold_tap DOWN LC(DOWN)          &hold_tap RIGHT LC(RIGHT)  &trans
+&trans  &trans                   &hold_tap LC(UP_ARROW) UP_ARROW  &kp PRINTSCREEN            &kp END   &kp PAGE_DOWN                                      &kp PRINTSCREEN  &kp END   &kp PAGE_DOWN            &hold_tap LC(UP_ARROW) UP_ARROW  &trans                     &trans
+&trans  &hold_tap LC(LEFT) LEFT  &hold_tap LC(DOWN) DOWN          &hold_tap LC(RIGHT) RIGHT  &trans    &trans                                             &trans           &trans    &hold_tap LC(LEFT) LEFT  &hold_tap LC(DOWN) DOWN          &hold_tap LC(RIGHT) RIGHT  &trans
 &trans  &trans                   &trans                           &trans                     &trans    &kp ENTER      &zero_two_dance    &two_zero_dance  &kp SPACE        &trans    &trans                   &trans                           &trans                     &trans
                                                                   &trans                     &trans    &to 2          &trans             &trans           &to 0            &trans    &trans
             >;
