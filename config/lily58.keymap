@@ -68,7 +68,7 @@
             label = "ONE_TWO_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <280>;
-            bindings = <&to 1>, <&to 2>;
+            bindings = <&to 2>, <&to 1>;
         };
 
         two_one_dance: two_one_dance {
@@ -76,7 +76,7 @@
             label = "TWO_ONE_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <280>;
-            bindings = <&to 2>, <&to 1>;
+            bindings = <&to 1>, <&to 2>;
         };
 
         zero_two_dance: zero_two_dance {
@@ -84,7 +84,7 @@
             label = "ZERO_TWO_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <280>;
-            bindings = <&to 0>, <&to 2>;
+            bindings = <&to 0>, <&to 1>;
         };
 
         two_zero_dance: two_zero_dance {
@@ -92,7 +92,7 @@
             label = "TWO_ZERO_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <280>;
-            bindings = <&to 2>, <&to 0>;
+            bindings = <&to 1>, <&to 0>;
         };
 
         one_zero_dance: one_zero_dance {
@@ -100,7 +100,7 @@
             label = "ONE_ZERO_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <280>;
-            bindings = <&to 1>, <&to 0>;
+            bindings = <&to 2>, <&to 0>;
         };
 
         zero_one_dance: zero_one_dance {
@@ -108,7 +108,16 @@
             label = "ZERO_ONE_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <280>;
-            bindings = <&to 0>, <&to 1>;
+            bindings = <&to 0>, <&to 2>;
+        };
+
+        layernav_dance: layernav_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LAYERNAV_DANCE";
+            #binding-cells = <0>;
+            bindings = <&to 0>, <&to 2>, <&to 1>;
+
+            tapping-term-ms = <280>;
         };
     };
 
@@ -128,28 +137,8 @@
 &hold_tap F1 NUMBER_1  &hold_tap F2 NUMBER_2  &hold_tap F3 NUMBER_3  &hold_tap F4 NUMBER_4  &hold_tap F5 N5    &hold_tap F6 NUMBER_6                                                  &hold_tap F7 N7  &hold_tap F8 N8    &hold_tap F9 N9  &hold_tap F10 N0  &hold_tap MINUS EQUAL  &hold_tap LC(BACKSPACE) BACKSPACE
 &hold_tap LS(TAB) TAB  &kp Q                  &kp W                  &kp E                  &kp R              &kp T                                                                  &kp Y            &kp U              &kp I            &kp O             &hold_tap F12 P        &kp BSLH
 &kp LEFT_CONTROL       &kp A                  &kp S                  &kp D                  &kp F              &kp G                                                                  &kp H            &kp J              &kp K            &kp L             &kp SEMI               &kp SQT
-&kp LEFT_SHIFT         &kp Z                  &hold_tap LC(X) X      &hold_tap LC(C) C      &hold_tap LC(V) V  &kp B                  &one_two_dance           &two_one_dance         &kp N            &kp M              &kp COMMA        &kp DOT           &kp FSLH               &kp RSHFT
-                                                                     &kp LALT               &kp LEFT_GUI       &to 2                  &hold_tap ENTER SPACE    &hold_tap SPACE ENTER  &to 1            &kp RIGHT_CONTROL  &kp MINUS
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        Arrows {
-            // ------------------------------------------------------------------------------------------------------------
-            // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
-            // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
-            // |   `   |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   ~   |
-            // |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
-            //                     |      |      |      |        |  |       |      |       |       |
-
-            label = "Arrows";
-            bindings = <
-&trans  &trans                   &trans                           &kp INS                    &kp HOME  &kp PAGE_UP                                        &kp INS          &kp HOME  &kp PAGE_UP              &trans                           &trans                     &trans
-&trans  &trans                   &hold_tap LC(UP_ARROW) UP_ARROW  &kp PRINTSCREEN            &kp END   &kp PAGE_DOWN                                      &kp PRINTSCREEN  &kp END   &kp PAGE_DOWN            &hold_tap LC(UP_ARROW) UP_ARROW  &trans                     &bt BT_CLR_ALL
-&trans  &hold_tap LC(LEFT) LEFT  &hold_tap LC(DOWN) DOWN          &hold_tap LC(RIGHT) RIGHT  &trans    &trans                                             &trans           &trans    &hold_tap LC(LEFT) LEFT  &hold_tap LC(DOWN) DOWN          &hold_tap LC(RIGHT) RIGHT  &trans
-&trans  &trans                   &trans                           &trans                     &trans    &kp ENTER      &zero_two_dance    &two_zero_dance  &kp SPACE        &trans    &trans                   &trans                           &trans                     &trans
-                                                                  &trans                     &trans    &to 2          &trans             &trans           &to 0            &trans    &trans
+&kp LEFT_SHIFT         &kp Z                  &hold_tap LC(X) X      &hold_tap LC(C) C      &hold_tap LC(V) V  &kp B                  &layernav_dance          &layernav_dance        &kp N            &kp M              &kp COMMA        &kp DOT           &kp FSLH               &kp RSHFT
+                                                                     &kp LALT               &kp LEFT_GUI       &to 1                  &hold_tap ENTER SPACE    &hold_tap SPACE ENTER  &to 2            &kp RIGHT_CONTROL  &kp MINUS
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -168,8 +157,28 @@
 &kp GRAVE  &trans           &kp LEFT_BRACKET  &kp SLASH        &kp ASTERISK     &kp MINUS                                       &kp GRAVE        &kp RIGHT_BRACKET  &kp SLASH        &kp ASTERISK     &kp MINUS  &trans
 &trans     &trans           &kp KP_NUMBER_7   &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                        &kp TAB          &kp KP_NUMBER_7    &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS   &trans
 &trans     &kp SEMICOLON    &kp KP_NUMBER_4   &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PIPE                                        &kp SEMICOLON    &kp KP_NUMBER_4    &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PIPE   &trans
-&trans     &kp KP_NUMBER_0  &kp KP_NUMBER_1   &kp KP_NUMBER_2  &kp KP_NUMBER_3  &to 1       &zero_one_dance    &one_zero_dance  &to 0            &kp KP_N1          &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER  &trans
+&trans     &kp KP_NUMBER_0  &kp KP_NUMBER_1   &kp KP_NUMBER_2  &kp KP_NUMBER_3  &to 2       &layernav_dance    &layernav_dance  &to 0            &kp KP_N1          &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER  &trans
                                               &kp KP_NUMBER_0  &kp COMMA        &kp PERIOD  &trans             &trans           &kp KP_NUMBER_0  &kp COMMA          &kp PERIOD
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        Arrows {
+            // ------------------------------------------------------------------------------------------------------------
+            // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
+            // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
+            // |   `   |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   ~   |
+            // |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
+            //                     |      |      |      |        |  |       |      |       |       |
+
+            label = "Arrows";
+            bindings = <
+&trans  &trans                   &trans                           &kp INS                    &kp HOME  &kp PAGE_UP                                        &kp INS          &kp HOME  &kp PAGE_UP              &trans                           &trans                     &trans
+&trans  &trans                   &hold_tap LC(UP_ARROW) UP_ARROW  &kp PRINTSCREEN            &kp END   &kp PAGE_DOWN                                      &kp PRINTSCREEN  &kp END   &kp PAGE_DOWN            &hold_tap LC(UP_ARROW) UP_ARROW  &trans                     &bt BT_CLR_ALL
+&trans  &hold_tap LC(LEFT) LEFT  &hold_tap LC(DOWN) DOWN          &hold_tap LC(RIGHT) RIGHT  &trans    &trans                                             &trans           &trans    &hold_tap LC(LEFT) LEFT  &hold_tap LC(DOWN) DOWN          &hold_tap LC(RIGHT) RIGHT  &trans
+&trans  &trans                   &trans                           &trans                     &trans    &kp ENTER      &layernav_dance    &layernav_dance  &kp SPACE        &trans    &trans                   &trans                           &trans                     &trans
+                                                                  &trans                     &trans    &to 1          &trans             &trans           &to 0            &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
