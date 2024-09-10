@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -175,7 +174,7 @@
             label = "Arrows";
             bindings = <
 &trans  &trans                   &trans                           &kp INS                    &kp HOME  &kp PAGE_UP                                        &kp INS          &kp HOME  &kp PAGE_UP              &trans                           &trans                     &trans
-&trans  &trans                   &hold_tap LC(UP_ARROW) UP_ARROW  &kp PRINTSCREEN            &kp END   &kp PAGE_DOWN                                      &kp PRINTSCREEN  &kp END   &kp PAGE_DOWN            &hold_tap LC(UP_ARROW) UP_ARROW  &trans                     &bt BT_CLR_ALL
+&trans  &trans                   &hold_tap LC(UP_ARROW) UP_ARROW  &kp PRINTSCREEN            &kp END   &kp PAGE_DOWN                                      &kp PRINTSCREEN  &kp END   &kp PAGE_DOWN            &hold_tap LC(UP_ARROW) UP_ARROW  &trans                     &trans
 &trans  &hold_tap LC(LEFT) LEFT  &hold_tap LC(DOWN) DOWN          &hold_tap LC(RIGHT) RIGHT  &trans    &trans                                             &trans           &trans    &hold_tap LC(LEFT) LEFT  &hold_tap LC(DOWN) DOWN          &hold_tap LC(RIGHT) RIGHT  &trans
 &trans  &trans                   &trans                           &trans                     &trans    &trans         &layernav_dance    &layernav_dance  &trans           &trans    &trans                   &trans                           &trans                     &trans
                                                                   &trans                     &trans    &kp ENTER      &trans             &trans           &kp SPACE        &trans    &trans
