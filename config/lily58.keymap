@@ -56,6 +56,11 @@
             bindings = <&kp CAPSLOCK>;
             key-positions = <16 17>;
         };
+
+        combo_windows_left {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <51 52>;
+        };
     };
 
     behaviors {
@@ -95,11 +100,11 @@
 
             label = "qwerty";
             bindings = <
-&hold_tap F1 NUMBER_1  &hold_tap F2 NUMBER_2  &hold_tap F3 NUMBER_3  &hold_tap F4 NUMBER_4  &hold_tap F5 N5    &hold_tap F6 NUMBER_6                                      &hold_tap F7 N7  &hold_tap F8 N8    &hold_tap F9 N9  &hold_tap F10 N0   &hold_tap MINUS EQUAL  &hold_tap LC(BACKSPACE) BACKSPACE
-&hold_tap LS(TAB) TAB  &hold_tap LC(Q) Q      &kp W                  &kp E                  &kp R              &hold_tap LC(T) T                                          &kp Y            &kp U              &kp I            &hold_tap F11 O    &hold_tap F12 P        &kp BSLH
-&kp LEFT_CONTROL       &hold_tap LC(A) A      &kp S                  &kp D                  &hold_tap LC(F) F  &kp G                                                      &kp H            &kp J              &kp K            &hold_tap LG(L) L  &kp SEMI               &kp SQT
-&kp LEFT_SHIFT         &hold_tap LC(Z) Z      &hold_tap LC(X) X      &hold_tap LC(C) C      &hold_tap LC(V) V  &kp B                  &layernav_dance    &layernav_dance  &kp N            &kp M              &kp COMMA        &kp DOT            &kp FSLH               &kp RSHFT
-                                                                     &kp LALT               &mo 2              &mo 3                  &kp SPACE          &kp ENTER        &mo 3            &kp RIGHT_CONTROL  &kp MINUS
+&hold_tap F1 NUMBER_1  &hold_tap F2 NUMBER_2  &hold_tap F3 NUMBER_3  &hold_tap F4 NUMBER_4  &hold_tap F5 N5    &hold_tap F6 NUMBER_6                                      &hold_tap F7 N7  &hold_tap F8 N8  &hold_tap F9 N9  &hold_tap F10 N0   &hold_tap MINUS EQUAL  &hold_tap LC(BACKSPACE) BACKSPACE
+&hold_tap LS(TAB) TAB  &hold_tap LC(Q) Q      &kp W                  &kp E                  &kp R              &hold_tap LC(T) T                                          &kp Y            &kp U            &kp I            &hold_tap F11 O    &hold_tap F12 P        &kp BSLH
+&kp LEFT_CONTROL       &hold_tap LC(A) A      &kp S                  &kp D                  &hold_tap LC(F) F  &kp G                                                      &kp H            &kp J            &kp K            &hold_tap LG(L) L  &kp SEMI               &kp SQT
+&kp LEFT_SHIFT         &hold_tap LC(Z) Z      &hold_tap LC(X) X      &hold_tap LC(C) C      &hold_tap LC(V) V  &kp B                  &layernav_dance    &layernav_dance  &kp N            &kp M            &kp COMMA        &kp DOT            &kp FSLH               &kp RSHFT
+                                                                     &kp LALT               &mo 2              &mo 3                  &kp SPACE          &kp ENTER        &mo 3            &mo 1            &kp MINUS
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
