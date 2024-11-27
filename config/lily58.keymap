@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 
 / {
     combos {
@@ -135,11 +136,11 @@
 
             label = "Arrows";
             bindings = <
-&trans  &trans          &trans                   &kp INSERT                       &kp HOME                   &kp PAGE_UP                                        &kp HOME        &kp PG_UP                &kp INSERT                           &trans                           &trans  &trans
-&trans  &trans          &trans                   &hold_tap LC(UP_ARROW) UP_ARROW  &kp END                    &kp PAGE_DOWN                                      &kp END         &kp PAGE_DOWN            &hold_tap LC(UP_ARROW) UP_ARROW      &trans                           &trans  &trans
-&trans  &kp LEFT_SHIFT  &hold_tap LC(LEFT) LEFT  &hold_tap LC(DOWN) DOWN          &hold_tap LC(RIGHT) RIGHT  &trans                                             &kp LEFT_SHIFT  &hold_tap LC(LEFT) LEFT  &hold_tap LC(DOWN_ARROW) DOWN_ARROW  &hold_tap LC(RIGHT_ARROW) RIGHT  &trans  &trans
-&trans  &trans          &trans                   &trans                           &trans                     &trans         &layernav_dance    &layernav_dance  &trans          &trans                   &trans                               &trans                           &trans  &trans
-                                                 &trans                           &trans                     &kp ENTER      &trans             &trans           &kp SPACE       &trans                   &trans
+&mkp LCLK  &mkp RCLK       &trans                   &kp INSERT                       &kp HOME                   &kp PAGE_UP                                        &kp HOME        &kp PG_UP                &kp INSERT                           &trans                           &mkp LCLK  &mkp RCLK
+&trans     &trans          &trans                   &hold_tap LC(UP_ARROW) UP_ARROW  &kp END                    &kp PAGE_DOWN                                      &kp END         &kp PAGE_DOWN            &hold_tap LC(UP_ARROW) UP_ARROW      &trans                           &trans     &trans
+&trans     &kp LEFT_SHIFT  &hold_tap LC(LEFT) LEFT  &hold_tap LC(DOWN) DOWN          &hold_tap LC(RIGHT) RIGHT  &trans                                             &kp LEFT_SHIFT  &hold_tap LC(LEFT) LEFT  &hold_tap LC(DOWN_ARROW) DOWN_ARROW  &hold_tap LC(RIGHT_ARROW) RIGHT  &trans     &trans
+&trans     &trans          &trans                   &trans                           &trans                     &trans         &layernav_dance    &layernav_dance  &trans          &trans                   &trans                               &trans                           &trans     &trans
+                                                    &trans                           &trans                     &kp ENTER      &trans             &trans           &kp SPACE       &trans                   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
