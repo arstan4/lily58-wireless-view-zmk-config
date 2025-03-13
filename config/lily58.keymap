@@ -119,7 +119,7 @@
             bindings = <
 &kp GRAVE  &hold_tap F2 HOME  &kp LEFT_BRACKET  &kp SLASH        &kp ASTERISK     &kp MINUS                                       &kp GRAVE        &kp RIGHT_BRACKET  &kp SLASH        &kp ASTERISK     &kp MINUS  &trans
 &trans     &kp END            &kp KP_NUMBER_7   &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                        &kp TAB          &kp KP_NUMBER_7    &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS   &trans
-&trans     &kp SEMICOLON      &kp KP_NUMBER_4   &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PIPE                                        &kp SEMICOLON    &kp KP_NUMBER_4    &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PIPE   &trans
+&trans     &kp SEMICOLON      &kp KP_NUMBER_4   &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PIPE                                        &kp SEMICOLON    &kp KP_NUMBER_4    &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PIPE   &caps_word
 &trans     &kp KP_NUMBER_0    &kp KP_NUMBER_1   &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER   &layernav_dance    &layernav_dance  &kp SPACE        &kp KP_N1          &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER  &trans
                                                 &kp KP_NUMBER_0  &kp COMMA        &kp PERIOD  &trans             &trans           &kp KP_NUMBER_0  &kp COMMA          &kp PERIOD
             >;
