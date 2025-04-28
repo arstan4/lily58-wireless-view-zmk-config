@@ -78,7 +78,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LAYERNAV_DANCE";
             #binding-cells = <0>;
-            bindings = <&to 1>, <&to 0>, <&to 2>;
+            bindings = <&to 0>, <&to 1>, <&to 2>;
 
             tapping-term-ms = <280>;
         };
