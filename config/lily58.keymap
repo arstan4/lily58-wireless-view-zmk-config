@@ -58,6 +58,11 @@
             bindings = <&kp CAPSLOCK>;
             key-positions = <3 2>;
         };
+
+        left_windows_paste {
+            bindings = <&kp LG(V)>;
+            key-positions = <37 40>;
+        };
     };
 
     behaviors {
