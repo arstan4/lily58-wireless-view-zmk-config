@@ -106,7 +106,7 @@
 &hold_tap LS(TAB) TAB  &hold_tap LC(Q) Q      &kp W                  &kp E                  &kp R              &hold_tap LC(T) T                                                      &kp Y            &kp U            &kp I            &hold_tap F11 O    &hold_tap F12 P        &kp BSLH
 &kp LEFT_CONTROL       &hold_tap LC(A) A      &kp S                  &kp D                  &hold_tap LC(F) F  &kp G                                                                  &kp H            &kp J            &kp K            &hold_tap LG(L) L  &kp SEMI               &kp SQT
 &kp LEFT_SHIFT         &hold_tap LEFT_GUI Z   &hold_tap LC(X) X      &hold_tap LC(C) C      &hold_tap LC(V) V  &kp B                  &layernav_dance          &layernav_dance        &kp N            &kp M            &kp COMMA        &kp DOT            &kp FSLH               &kp RSHFT
-                                                                     &kp LALT               &mo 2              &mo 3                  &hold_tap ENTER SPACE    &hold_tap SPACE ENTER  &mo 3            &mo 1            &kp MINUS
+                                                                     &kp LALT               &mo 2              &mo 3                  &hold_tap ENTER SPACE    &hold_tap SPACE ENTER  &mo 1            &mo 3            &kp MINUS
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
