@@ -63,6 +63,16 @@
             bindings = <&kp LG(V)>;
             key-positions = <37 40>;
         };
+
+        left_control_backspace {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <24 27 28>;
+        };
+
+        left_control_delete {
+            bindings = <&kp LC(DELETE)>;
+            key-positions = <24 25 26>;
+        };
     };
 
     behaviors {
