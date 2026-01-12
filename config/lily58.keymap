@@ -118,6 +118,15 @@
         };
     };
 
+    macros {
+        XLOOKUP: XLOOKUP {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp LS(X) &kp LS(L) &kp LS(O) &kp LS(O) &kp LS(K) &kp LS(U) &kp LS(P) &kp LPAR &kp RPAR &kp LEFT>;
+            label = "XLOOKUP";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -171,7 +180,7 @@
 
             label = "Arrows";
             bindings = <
-&trans  &kp HOME        &trans                   &kp INSERT                       &kp PAGE_UP                &kp MINUS                       &kp HOME        &kp PG_UP                &kp INSERT                           &mkp LCLK                        &mmv MOVE_UP    &mkp RCLK
+&trans  &kp HOME        &XLOOKUP                 &kp INSERT                       &kp PAGE_UP                &kp MINUS                       &kp HOME        &kp PG_UP                &kp INSERT                           &mkp LCLK                        &mmv MOVE_UP    &mkp RCLK
 &trans  &kp END         &trans                   &hold_tap LC(UP_ARROW) UP_ARROW  &kp PAGE_DOWN              &kp GRAVE                       &kp END         &kp PAGE_DOWN            &hold_tap LC(UP_ARROW) UP_ARROW      &mmv MOVE_LEFT                   &mmv MOVE_DOWN  &mmv MOVE_RIGHT
 &trans  &kp LEFT_SHIFT  &hold_tap LC(LEFT) LEFT  &hold_tap LC(DOWN) DOWN          &hold_tap LC(RIGHT) RIGHT  &trans                          &kp LEFT_SHIFT  &hold_tap LC(LEFT) LEFT  &hold_tap LC(DOWN_ARROW) DOWN_ARROW  &hold_tap LC(RIGHT_ARROW) RIGHT  &msc SCRL_UP    &msc SCRL_DOWN
 &trans  &trans          &trans                   &trans                           &bt BT_CLR                 &out OUT_USB  &trans    &trans  &out OUT_BLE    &bt BT_CLR               &bt BT_CLR_ALL                       &trans                           &trans          &trans
