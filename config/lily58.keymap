@@ -125,6 +125,13 @@
             bindings = <&kp EQUAL &kp LS(X) &kp LS(L) &kp LS(O) &kp LS(O) &kp LS(K) &kp LS(U) &kp LS(P) &kp LPAR>;
             label = "XLOOKUP";
         };
+
+        WikiLink: WikiLink {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp LBKT>;
+            label = "WIKILINK";
+        };
     };
 
     keymap {
@@ -193,7 +200,7 @@
         Swap {
             bindings = <
 &hold_tap LEFT_BRACE LEFT_BRACKET  &hold_tap RIGHT_BRACE RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp LC(LS(ESCAPE))                          &kp LBKT  &kp RBKT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
-&trans                             &kp Y                                &kp U                 &kp I                  &kp O      &kp P                                       &kp Q     &kp W     &kp E                 &kp R                  &kp T   &trans
+&WikiLink                          &kp Y                                &kp U                 &kp I                  &kp O      &kp P                                       &kp Q     &kp W     &kp E                 &kp R                  &kp T   &trans
 &trans                             &kp H                                &kp J                 &kp K                  &kp L      &kp SEMI                                    &kp A     &kp S     &kp D                 &kp F                  &kp G   &trans
 &trans                             &kp N                                &kp M                 &kp COMMA              &kp DOT    &kp FSLH            &trans       &trans     &kp Z     &kp X     &kp C                 &kp V                  &kp B   &trans
                                                                                               &trans                 &trans     &trans              &kp ENTER    &kp SPACE  &trans    &trans    &trans
