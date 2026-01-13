@@ -85,6 +85,11 @@
             bindings = <&kp LC(DELETE)>;
             key-positions = <24 26 25>;
         };
+
+        left_andsymbol {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <40 41>;
+        };
     };
 
     behaviors {
