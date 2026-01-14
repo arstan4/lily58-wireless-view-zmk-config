@@ -100,6 +100,11 @@
             bindings = <&kp SEMICOLON>;
             key-positions = <40 28>;
         };
+
+        left_ars {
+            bindings = <&ARS>;
+            key-positions = <25 26 16>;
+        };
     };
 
     behaviors {
@@ -146,6 +151,13 @@
             #binding-cells = <0>;
             bindings = <&kp LBKT &kp LBKT>;
             label = "WIKILINK";
+        };
+
+        ARS: ARS {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(A) &kp M &kp B &kp E &kp R &kp SPACE &kp LS(R) &kp DOT &kp SPACE &kp LS(S) &kp T &kp A &kp N &kp T &kp O &kp N>;
+            label = "ARS";
         };
     };
 
