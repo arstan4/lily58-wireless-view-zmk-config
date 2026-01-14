@@ -90,6 +90,16 @@
             bindings = <&kp AMPERSAND>;
             key-positions = <40 41>;
         };
+
+        left_asterik {
+            bindings = <&kp ASTERISK>;
+            key-positions = <41 29>;
+        };
+
+        left_colon {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <40 28>;
+        };
     };
 
     behaviors {
