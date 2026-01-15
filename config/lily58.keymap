@@ -98,6 +98,11 @@
             key-positions = <40 28>;
             layers = <0>;
         };
+
+        combo_control_backspace_right {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <11 23>;
+        };
     };
 
     behaviors {
@@ -167,7 +172,7 @@
 
             label = "qwerty";
             bindings = <
-&hold_tap F1 NUMBER_1  &hold_tap F2 NUMBER_2  &hold_tap F3 NUMBER_3  &hold_tap F4 NUMBER_4  &hold_tap F5 N5    &hold_tap F6 NUMBER_6                                                  &hold_tap F7 N7  &hold_tap F8 N8  &hold_tap F9 N9  &hold_tap F10 N0   &hold_tap MINUS EQUAL  &hold_tap LC(BACKSPACE) BACKSPACE
+&hold_tap F1 NUMBER_1  &hold_tap F2 NUMBER_2  &hold_tap F3 NUMBER_3  &hold_tap F4 NUMBER_4  &hold_tap F5 N5    &hold_tap F6 NUMBER_6                                                  &hold_tap F7 N7  &hold_tap F8 N8  &hold_tap F9 N9  &hold_tap F10 N0   &hold_tap MINUS EQUAL  &kp BACKSPACE
 &hold_tap LS(TAB) TAB  &hold_tap LC(Q) Q      &kp W                  &kp E                  &kp R              &hold_tap LC(T) T                                                      &kp Y            &kp U            &kp I            &hold_tap F11 O    &hold_tap F12 P        &kp BSLH
 &kp LEFT_CONTROL       &hold_tap LC(A) A      &kp S                  &kp D                  &hold_tap LC(F) F  &kp G                                                                  &kp H            &kp J            &kp K            &hold_tap LG(L) L  &kp SEMI               &kp SQT
 &kp LEFT_SHIFT         &hold_tap LEFT_GUI Z   &hold_tap LC(X) X      &hold_tap LC(C) C      &hold_tap LC(V) V  &kp B                  &layernav_dance          &bluetooth_dance       &kp N            &kp M            &kp COMMA        &kp DOT            &kp FSLH               &kp RSHFT
