@@ -81,20 +81,14 @@
             key-positions = <0 1>;
         };
 
-        left_andsymbol {
-            bindings = <&kp AMPERSAND>;
-            key-positions = <40 41>;
-            layers = <0>;
-        };
-
-        left_asterik {
-            bindings = <&kp ASTERISK>;
+        combo_amperstand_left {
+            bindings = <&kp AMPS>;
             key-positions = <41 29>;
             layers = <0>;
         };
 
-        left_colon {
-            bindings = <&kp SEMICOLON>;
+        combo_asterik_left {
+            bindings = <&kp ASTERISK>;
             key-positions = <40 28>;
             layers = <0>;
         };
@@ -102,6 +96,11 @@
         combo_control_backspace_right {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <11 23>;
+        };
+
+        combo_semicolon_left {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <39 27>;
         };
     };
 
