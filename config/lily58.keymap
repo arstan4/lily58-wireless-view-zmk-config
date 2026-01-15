@@ -191,11 +191,11 @@
 
             label = "Num";
             bindings = <
-&kp GRAVE  &hold_tap F2 HOME  &kp LEFT_BRACKET  &kp SLASH        &kp ASTERISK     &kp MINUS                     &kp GRAVE        &kp RIGHT_BRACKET  &kp SLASH        &kp ASTERISK     &kp MINUS  &trans
-&trans     &kp END            &kp KP_NUMBER_7   &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                      &kp TAB          &kp KP_NUMBER_7    &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS   &trans
-&trans     &kp SEMICOLON      &kp KP_NUMBER_4   &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PIPE                      &kp SEMICOLON    &kp KP_NUMBER_4    &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PIPE   &trans
-&trans     &kp KP_NUMBER_0    &kp KP_NUMBER_1   &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER   &trans    &trans  &kp SPACE        &kp KP_N1          &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER  &trans
-                                                &kp KP_NUMBER_0  &kp COMMA        &kp PERIOD  &trans    &trans  &kp KP_NUMBER_0  &kp COMMA          &kp PERIOD
+&kp GRAVE  &hold_tap F2 HOME  &kp EQUAL        &kp SLASH        &kp ASTERISK     &kp MINUS                     &trans           &kp EQUAL        &kp SLASH        &kp ASTERISK     &kp MINUS  &trans
+&trans     &kp END            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                      &kp TAB          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS   &trans
+&trans     &trans             &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans                        &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans     &trans
+&trans     &kp KP_NUMBER_0    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER   &trans    &trans  &kp SPACE        &kp KP_N1        &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER  &trans
+                                               &kp KP_NUMBER_0  &kp COMMA        &kp PERIOD  &trans    &trans  &kp KP_NUMBER_0  &kp COMMA        &kp PERIOD
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -213,7 +213,7 @@
             bindings = <
 &trans  &kp HOME        &XLOOKUP                 &kp INSERT                       &kp PAGE_UP                &kp MINUS                       &kp HOME        &kp PG_UP                &kp INSERT                           &mkp LCLK                        &mmv MOVE_UP    &mkp RCLK
 &trans  &kp END         &ARS                     &hold_tap LC(UP_ARROW) UP_ARROW  &kp PAGE_DOWN              &kp GRAVE                       &kp END         &kp PAGE_DOWN            &hold_tap LC(UP_ARROW) UP_ARROW      &mmv MOVE_LEFT                   &mmv MOVE_DOWN  &mmv MOVE_RIGHT
-&trans  &kp LEFT_SHIFT  &hold_tap LC(LEFT) LEFT  &hold_tap LC(DOWN) DOWN          &hold_tap LC(RIGHT) RIGHT  &trans                          &kp LEFT_SHIFT  &hold_tap LC(LEFT) LEFT  &hold_tap LC(DOWN_ARROW) DOWN_ARROW  &hold_tap LC(RIGHT_ARROW) RIGHT  &msc SCRL_UP    &msc SCRL_DOWN
+&trans  &kp LEFT_SHIFT  &hold_tap LC(LEFT) LEFT  &hold_tap LC(DOWN) DOWN          &hold_tap LC(RIGHT) RIGHT  &kp PIPE                        &kp LEFT_SHIFT  &hold_tap LC(LEFT) LEFT  &hold_tap LC(DOWN_ARROW) DOWN_ARROW  &hold_tap LC(RIGHT_ARROW) RIGHT  &msc SCRL_UP    &msc SCRL_DOWN
 &trans  &trans          &trans                   &trans                           &bt BT_CLR                 &out OUT_USB  &trans    &trans  &out OUT_BLE    &bt BT_CLR               &bt BT_CLR_ALL                       &trans                           &trans          &trans
                                                  &trans                           &trans                     &kp ENTER     &trans    &trans  &kp SPACE       &trans                   &trans
             >;
