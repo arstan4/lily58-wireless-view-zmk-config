@@ -63,7 +63,7 @@
 
         combo_windows_paste_left {
             bindings = <&kp LG(V)>;
-            key-positions = <40 39>;
+            key-positions = <40 41>;
         };
 
         combo_control_backspace_left {
@@ -76,7 +76,7 @@
             key-positions = <26 14>;
         };
 
-        left_control_alt_delete {
+        combo_control_alt_delete_left {
             bindings = <&kp LA(LC(DELETE))>;
             key-positions = <0 1>;
         };
