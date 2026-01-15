@@ -61,49 +61,42 @@
             key-positions = <3 2>;
         };
 
-        left_windows_paste {
+        combo_windows_paste_left {
             bindings = <&kp LG(V)>;
-            key-positions = <37 40>;
+            key-positions = <40 39>;
         };
 
-        left_control_backspace {
+        combo_control_backspace_left {
             bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <24 27 28>;
+            key-positions = <28 16>;
         };
 
-        left_control_delete {
+        combo_control_delete_left {
             bindings = <&kp LC(DELETE)>;
-            key-positions = <24 26>;
+            key-positions = <26 14>;
         };
 
         left_control_alt_delete {
             bindings = <&kp LA(LC(DELETE))>;
-            key-positions = <24 50 25 26>;
-        };
-
-        left_control_delete_2 {
-            bindings = <&kp LC(DELETE)>;
-            key-positions = <24 26 25>;
+            key-positions = <0 1>;
         };
 
         left_andsymbol {
             bindings = <&kp AMPERSAND>;
             key-positions = <40 41>;
+            layers = <0>;
         };
 
         left_asterik {
             bindings = <&kp ASTERISK>;
             key-positions = <41 29>;
+            layers = <0>;
         };
 
         left_colon {
             bindings = <&kp SEMICOLON>;
             key-positions = <40 28>;
-        };
-
-        left_ars {
-            bindings = <&ARS>;
-            key-positions = <25 26 16>;
+            layers = <0>;
         };
     };
 
@@ -215,7 +208,7 @@
             label = "Arrows";
             bindings = <
 &trans  &kp HOME        &XLOOKUP                 &kp INSERT                       &kp PAGE_UP                &kp MINUS                       &kp HOME        &kp PG_UP                &kp INSERT                           &mkp LCLK                        &mmv MOVE_UP    &mkp RCLK
-&trans  &kp END         &trans                   &hold_tap LC(UP_ARROW) UP_ARROW  &kp PAGE_DOWN              &kp GRAVE                       &kp END         &kp PAGE_DOWN            &hold_tap LC(UP_ARROW) UP_ARROW      &mmv MOVE_LEFT                   &mmv MOVE_DOWN  &mmv MOVE_RIGHT
+&trans  &kp END         &ARS                     &hold_tap LC(UP_ARROW) UP_ARROW  &kp PAGE_DOWN              &kp GRAVE                       &kp END         &kp PAGE_DOWN            &hold_tap LC(UP_ARROW) UP_ARROW      &mmv MOVE_LEFT                   &mmv MOVE_DOWN  &mmv MOVE_RIGHT
 &trans  &kp LEFT_SHIFT  &hold_tap LC(LEFT) LEFT  &hold_tap LC(DOWN) DOWN          &hold_tap LC(RIGHT) RIGHT  &trans                          &kp LEFT_SHIFT  &hold_tap LC(LEFT) LEFT  &hold_tap LC(DOWN_ARROW) DOWN_ARROW  &hold_tap LC(RIGHT_ARROW) RIGHT  &msc SCRL_UP    &msc SCRL_DOWN
 &trans  &trans          &trans                   &trans                           &bt BT_CLR                 &out OUT_USB  &trans    &trans  &out OUT_BLE    &bt BT_CLR               &bt BT_CLR_ALL                       &trans                           &trans          &trans
                                                  &trans                           &trans                     &kp ENTER     &trans    &trans  &kp SPACE       &trans                   &trans
