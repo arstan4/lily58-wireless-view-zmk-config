@@ -102,6 +102,11 @@
             bindings = <&kp SEMICOLON>;
             key-positions = <39 27>;
         };
+
+        combo_colon_left {
+            bindings = <&kp COLON>;
+            key-positions = <38 26>;
+        };
     };
 
     behaviors {
