@@ -100,12 +100,12 @@
 
         combo_semicolon_left {
             bindings = <&kp SEMICOLON>;
-            key-positions = <39 27>;
+            key-positions = <38 26>;
         };
 
         combo_colon_left {
             bindings = <&kp COLON>;
-            key-positions = <38 26>;
+            key-positions = <27 39>;
         };
     };
 
