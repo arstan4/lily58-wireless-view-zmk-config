@@ -96,21 +96,25 @@
         combo_control_backspace_right {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <11 23>;
+            layers = <0>;
         };
 
         combo_semicolon_left {
             bindings = <&kp SEMICOLON>;
             key-positions = <38 26>;
+            layers = <0>;
         };
 
         combo_colon_left {
             bindings = <&kp COLON>;
             key-positions = <27 39>;
+            layers = <0>;
         };
 
         combo_minus_left {
             bindings = <&kp MINUS>;
             key-positions = <29 17>;
+            layers = <0>;
         };
     };
 
