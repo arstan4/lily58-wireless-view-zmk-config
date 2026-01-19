@@ -68,12 +68,12 @@
 
         combo_control_backspace_left {
             bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <28 16>;
+            key-positions = <40 39>;
         };
 
         combo_control_delete_left {
             bindings = <&kp LC(DELETE)>;
-            key-positions = <26 14>;
+            key-positions = <38 37>;
         };
 
         combo_control_alt_delete_left {
@@ -106,6 +106,11 @@
         combo_colon_left {
             bindings = <&kp COLON>;
             key-positions = <27 39>;
+        };
+
+        combo_minus_left {
+            bindings = <&kp MINUS>;
+            key-positions = <29 17>;
         };
     };
 
