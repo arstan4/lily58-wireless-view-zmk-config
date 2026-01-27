@@ -138,7 +138,7 @@
 
         combo_molayer_num_left {
             bindings = <&mo 1>;
-            key-positions = <53 42>;
+            key-positions = <36 37>;
             layers = <0>;
         };
 
