@@ -96,7 +96,7 @@
 
         combo_control_backspace_right {
             bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <11 23>;
+            key-positions = <11 10>;
             layers = <0>;
         };
 
@@ -138,7 +138,7 @@
 
         combo_molayer_num_left {
             bindings = <&mo 1>;
-            key-positions = <36 37>;
+            key-positions = <36 24>;
             layers = <0>;
         };
 
