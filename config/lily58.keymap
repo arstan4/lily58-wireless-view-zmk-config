@@ -97,7 +97,6 @@
         combo_control_backspace_right {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <11 10>;
-            layers = <0>;
         };
 
         combo_pipe_left {
