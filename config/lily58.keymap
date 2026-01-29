@@ -170,6 +170,11 @@
             key-positions = <1 13>;
             layers = <0>;
         };
+
+        combo_gui_left {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <39 38>;
+        };
     };
 
     behaviors {
