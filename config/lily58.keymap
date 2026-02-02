@@ -175,6 +175,12 @@
             bindings = <&kp LEFT_WIN>;
             key-positions = <39 38>;
         };
+
+        combo_quote_left {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <2 14>;
+            layers = <0>;
+        };
     };
 
     behaviors {
