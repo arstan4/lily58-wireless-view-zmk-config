@@ -301,13 +301,6 @@
         compatible = "zmk,keymap";
 
         qwerty {
-            // ------------------------------------------------------------------------------------------------------------
-            // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
-            // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
-            // |  CTRL |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
-            // | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
-            //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
-
             label = "qwerty";
             bindings = <
 &hold_tap F1 NUMBER_1  &hold_tap F2 NUMBER_2  &hold_tap F3 NUMBER_3  &hold_tap F4 NUMBER_4  &hold_tap F5 N5    &hold_tap F6 NUMBER_6                                              &hold_tap F7 N7  &hold_tap F8 N8  &hold_tap F9 N9  &hold_tap F10 N0   &hold_tap MINUS EQUAL  &kp BACKSPACE
@@ -321,13 +314,6 @@
         };
 
         Nums {
-            // ------------------------------------------------------------------------------------------------------------
-            // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
-            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
-            // |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |      |   <-  |   v   |  ^   |  ->   |       |
-            // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
-            //                     |      |      |      |        |  |       |      |       |       |
-
             label = "Nums";
             bindings = <
 &kp GRAVE  &kp HOME         &kp EQUAL        &kp SLASH        &kp ASTERISK     &kp MINUS                     &trans           &kp EQUAL        &kp SLASH        &kp ASTERISK     &kp MINUS  &trans
@@ -341,13 +327,6 @@
         };
 
         Arrows {
-            // ------------------------------------------------------------------------------------------------------------
-            // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
-            // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
-            // |   `   |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   ~   |
-            // |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
-            //                     |      |      |      |        |  |       |      |       |       |
-
             label = "Arrows";
             bindings = <
 &trans  &kp HOME  &trans                   &kp INSERT                       &kp PAGE_UP                &kp MINUS                        &kp HOME        &kp PG_UP                &kp INSERT                           &mkp LCLK                        &mmv MOVE_UP    &mkp RCLK
