@@ -165,8 +165,8 @@
             layers = <0>;
         };
 
-        combo_approx_left {
-            bindings = <&kp TILDE>;
+        combo_underscore_left {
+            bindings = <&kp UNDER>;
             key-positions = <1 13>;
             layers = <0>;
         };
@@ -179,6 +179,12 @@
         combo_quote_left {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <2 14>;
+            layers = <0>;
+        };
+
+        combo_approx_left {
+            bindings = <&kp TILDE>;
+            key-positions = <0 12>;
             layers = <0>;
         };
     };
