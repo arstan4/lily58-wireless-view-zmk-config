@@ -324,7 +324,7 @@
             bindings = <
 &kp GRAVE  &kp HOME         &kp EQUAL        &kp SLASH        &kp ASTERISK     &kp MINUS                     &trans           &kp EQUAL        &kp SLASH        &kp ASTERISK     &kp MINUS  &trans
 &trans     &kp END          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                      &kp TAB          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS   &trans
-&trans     &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &Blanks                       &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COLON  &trans
+&trans     &Blanks          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COLON                     &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COLON  &trans
 &trans     &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER   &trans    &trans  &kp SPACE        &kp KP_N1        &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER  &trans
                                              &kp KP_NUMBER_0  &kp COMMA        &kp PERIOD  &trans    &trans  &kp KP_NUMBER_0  &kp COMMA        &kp PERIOD
             >;
