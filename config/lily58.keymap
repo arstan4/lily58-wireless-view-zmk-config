@@ -304,6 +304,13 @@
 
             label = "BLANKS";
         };
+
+        Key: password {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp A &kp T &kp H &kp A &kp N &kp N3 &kp AT &kp A &kp LS(R) &kp S &kp N1 &kp N9 &kp N8 &kp N9>;
+            label = "PASSWORD";
+        };
     };
 
     keymap {
@@ -338,7 +345,7 @@
         Arrows {
             label = "Arrows";
             bindings = <
-&trans  &kp HOME  &trans                   &kp INSERT                       &kp PAGE_UP                &kp MINUS                        &kp HOME        &kp PG_UP                &kp INSERT                           &mkp LCLK                        &mmv MOVE_UP    &mkp RCLK
+&trans  &kp HOME  &Key                     &kp INSERT                       &kp PAGE_UP                &kp MINUS                        &kp HOME        &kp PG_UP                &kp INSERT                           &mkp LCLK                        &mmv MOVE_UP    &mkp RCLK
 &trans  &kp END   &trans                   &hold_tap LC(UP_ARROW) UP_ARROW  &kp PAGE_DOWN              &kp K_APP                        &kp END         &kp PAGE_DOWN            &hold_tap LC(UP_ARROW) UP_ARROW      &mmv MOVE_LEFT                   &mmv MOVE_DOWN  &mmv MOVE_RIGHT
 &trans  &trans    &hold_tap LC(LEFT) LEFT  &hold_tap LC(DOWN) DOWN          &hold_tap LC(RIGHT) RIGHT  &kp LS(LG(S))                    &kp LEFT_SHIFT  &hold_tap LC(LEFT) LEFT  &hold_tap LC(DOWN_ARROW) DOWN_ARROW  &hold_tap LC(RIGHT_ARROW) RIGHT  &msc SCRL_UP    &msc SCRL_DOWN
 &trans  &trans    &trans                   &trans                           &trans                     &out OUT_USB   &trans    &trans  &out OUT_BLE    &bt BT_CLR               &bt BT_CLR_ALL                       &trans                           &trans          &trans
