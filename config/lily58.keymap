@@ -305,11 +305,11 @@
             label = "BLANKS";
         };
 
-        Key: password {
+        Key: Key {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp N &kp A &kp T &kp H &kp A &kp N &kp N3 &kp AT &kp A &kp LS(R) &kp S &kp N1 &kp N9 &kp N8 &kp N9>;
-            label = "PASSWORD";
+            label = "Key";
         };
     };
 
